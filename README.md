@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js Typescript Redux startup set
 
-## Getting Started
+> 이 스타터팩은 코알라 프로젝트의 일환으로 시작했습니다.
+> including styled-components, sass, redux-logger, redux-persist, sweetalert2
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- "axios": "^0.21.1",
+- "next": "10.0.4",
+- "next-redux-wrapper": "^6.0.2",
+- "react": "17.0.1",
+- "react-dom": "17.0.1",
+- "react-redux": "^7.2.2",
+- "redux": "^4.0.5",
+- "redux-logger": "^3.0.6",
+- "redux-persist": "^6.0.0",
+- "redux-thunk": "^2.3.0",
+- "styled-components": "^5.2.1",
+- "sweetalert2": "^10.12.6"
+- "@material-ui/core": "^4.11.2",
+- "@types/node": "^14.14.17",
+- "@types/react": "^17.0.0",
+- "@types/react-dom": "^17.0.0",
+- "@types/react-redux": "^7.1.14",
+- "@types/redux-logger": "^3.0.8",
+- "@types/styled-components": "^5.1.7",
+- "@types/svg-sprite-loader": "^3.9.2",
+- "babel-plugin-module-resolver": "^4.1.0",
+- "babel-plugin-styled-components": "^1.12.0",
+- "husky": "^4.3.6",
+- "node-sass": "^5.0.0",
+- "postcss-preset-env": "^6.7.0",
+- "prettier": "^2.2.1",
+- "redux-devtools-extension": "^2.13.8",
+- "styled-reset": "^4.3.4",
+- "stylelint": "^13.8.0",
+- "stylelint-config-prettier": "^8.0.2",
+- "stylelint-config-recommended": "^3.0.0",
+- "stylelint-scss": "^3.18.0",
+- "svg-sprite-loader": "^5.2.1",
+- "svgo": "^1.3.2",
+- "svgo-loader": "^2.2.1",
+- "ts-node": "^9.1.1",
+- "tslint": "^6.1.3",
+- "tslint-config-prettier": "^1.18.0",
+- "tslint-eslint-rules": "^5.4.0",
+- "tslint-react": "^5.0.0",
+- "typescript": "^4.1.3"
