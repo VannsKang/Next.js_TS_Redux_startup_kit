@@ -14,7 +14,7 @@ import { PersistGate } from 'redux-persist/integration/react'
  */
 
 const CustomApp: FC<AppProps> = ({ Component, pageProps }) => {
-  const store = useStore()
+  const store: any = useStore()
 
   return (
     <PersistGate persistor={store.__persistor} loading={<div>Loading...</div>}>
