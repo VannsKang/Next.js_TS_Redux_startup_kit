@@ -1,19 +1,19 @@
 import { increment, decrement } from '@store/counter/counterActions'
 import { Counter } from '@components/counter/Counter'
 import { AppState } from '@store/store'
+import { useCallback } from 'react'
 import { Dispatch } from 'redux'
-import { connect } from 'react-redux'
+import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 
-const mapStateToProps = ({ counterReducer }: AppState) => ({
-  count: counterReducer.count,
-})
+export const HomepageCounter = () => {
+  const count = useSelector(
+    ({ counterReducer }: AppState) => counterReducer.count,
+    shallowEqual
+  )
 
-const mapDispatchToProps = (dispatch: Dispatch) => ({
-  add: () => dispatch(increment),
-  remove: () => dispatch(decrement),
-})
+  const dispatch: Dispatch<any> = useDispatch()
+  const add = useCallback(() => dispatch(increment), [dispatch])
+  const remove = useCallback(() => dispatch(decrement), [dispatch])
 
-export const HomepageCounter = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Counter)
+  return <Counter count={count} add={add} remove={remove} />
+}

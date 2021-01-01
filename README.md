@@ -1,7 +1,8 @@
 ## Next.js Typescript Redux startup set
 
 > 이 스타터팩은 코알라 프로젝트의 일환으로 시작했습니다.
-> including styled-components, sass, redux-logger, redux-persist, sweetalert2
+
+#### including styled-components, sass, redux-logger, redux-persist, sweetalert2
 
 - "axios": "^0.21.1",
 - "next": "10.0.4",
