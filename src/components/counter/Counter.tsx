@@ -1,9 +1,10 @@
-import React from 'react'
-
-import { Icon } from '@common/icon/Icon'
-import { Button } from '@material-ui/core'
-
+// LINK styles
 import styles from './counter.module.scss'
+
+// LINK Material UI
+import { Button } from '@material-ui/core'
+import AddCircleOutlineRoundedIcon from '@material-ui/icons/AddCircleOutlineRounded'
+import RemoveCircleOutlineRoundedIcon from '@material-ui/icons/RemoveCircleOutlineRounded'
 
 interface CounterProps {
   count: number
@@ -18,10 +19,12 @@ export const Counter: React.FC<CounterProps> = ({ count, add, remove }) => {
     <div className={styles.counter}>
       <h2>Count: {count}</h2>
       <Button color="secondary" onClick={onAdd}>
-        <Icon name={'plus'} /> Add
+        <AddCircleOutlineRoundedIcon color="secondary" />
+        Add
       </Button>
       <Button color="inherit" onClick={onRemove}>
-        <Icon name={'minus'} /> Remove
+        <RemoveCircleOutlineRoundedIcon color="inherit" />
+        Remove
       </Button>
     </div>
   )

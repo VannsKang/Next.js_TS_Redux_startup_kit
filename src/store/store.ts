@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, AnyAction, Store } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { CounterState } from './counter/counterReducer'
 import rootReducer from './index'
 
